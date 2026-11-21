@@ -1,0 +1,21 @@
+Smart_Notification_Manager/
+│
+├── index.html
+├── style.css
+├── app.js
+├── README.md
+│
+├── android/
+│   └── app/
+│       └── src/
+│           └── main/
+│               ├── java/
+│               │   └── com/
+│               │       └── smartnotificationmanager/
+│               │           ├── MainActivity.kt
+│               │           └── BankNotificationListener.kt
+│               └── AndroidManifest.xml
+│
+├── build.gradle.kts
+├── settings.gradle.kts
+└── app/build.gradle.kts
