@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#102b46">
+<title>فرز إشعارات من الضياع</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<header>
+  <h1>فرز إشعارات من الضياع</h1>
+  <p>إدارة ذكية لإشعاراتك وتحويلاتك</p>
+</header>
+
+<main>
+  <section class="dashboard">
+    <h2>لوحة التحكم</h2>
+    <div class="stats">
+      <div class="stat">
+        <h3 id="total">0</h3>
+        <p>كل الإشعارات</p>
+      </div>
+      <div class="stat">
+        <h3 id="transfers">0</h3>
+        <p>التحويلات</p>
+      </div>
+      <div class="stat">
+        <h3 id="saved">0</h3>
+        <p>المحفوظة</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="notifications">
+    <h2>إضافة إشعار</h2>
+    <input id="noticeTitle" type="text"
+      placeholder="عنوان الإشعار">
+    <textarea id="noticeText"
+      placeholder="اكتب تفاصيل الإشعار"></textarea>
+
+    <select id="noticeType">
+      <option value="عام">إشعار عام</option>
+      <option value="تحويل">تحويل بنكي</option>
+      <option value="مهم">إشعار مهم</option>
+    </select>
+
+    <button onclick="addNotice()">حفظ الإشعار</button>
+    <h2>سجل الإشعارات</h2>
+    <div id="noticeList"></div>
+  </section>
+</main>
+
+<footer>
+  <p>فرز إشعارات من الضياع © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+  </html>
+        
